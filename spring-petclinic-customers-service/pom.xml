@@ -18,7 +18,18 @@
         <docker.image.exposed.port>8081</docker.image.exposed.port>
         <docker.image.dockerfile.dir>${basedir}/../docker</docker.image.dockerfile.dir>
     </properties>
-
+<scm>
+        	<connection>scm:git:git@github.com:JerrinThomas/spring-petclinic-microservices.git</connection>
+        	<developerConnection>scm:git:git@github.com:JerrinThomas/spring-petclinic-microservices.git</developerConnection>
+        	<url>git@github.com:JerrinThomas/spring-petclinic-microservices.git</url>
+        	<tag>HEAD</tag>
+    </scm>
+	<distributionManagement>
+		<repository>
+			<id>testapp-release</id>
+			<url>http://localhost:8081/repository/testapp-release/</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 
         <!-- Spring Boot -->

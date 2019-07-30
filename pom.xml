@@ -41,7 +41,18 @@
         <docker.image.dockerize.version>v0.6.1</docker.image.dockerize.version>
         <docker.plugin.version>1.2.0</docker.plugin.version>
     </properties>
-
+    <scm>
+        	<connection>scm:git:git@github.com:JerrinThomas/spring-petclinic-microservices.git</connection>
+        	<developerConnection>scm:git:git@github.com:JerrinThomas/spring-petclinic-microservices.git</developerConnection>
+        	<url>git@github.com:JerrinThomas/spring-petclinic-microservices.git</url>
+        	<tag>HEAD</tag>
+    </scm>
+	<distributionManagement>
+		<repository>
+			<id>testapp-release</id>
+			<url>http://localhost:8081/repository/testapp-release/</url>
+		</repository>
+	</distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
